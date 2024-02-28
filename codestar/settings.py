@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fl_2m*pvgcoyzllx((2gxsdyin3-a&fb_(ue+uo0c39x!3c&-a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-moflynn23-djangoblog-luy9evw01t7.ws-eu108.gitpod.io', '.herokuapp.com']
 
@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 #    }
 # }
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("postgres://tyxuktig:7E39KaSJlc6vIEdRsOlK4IRH_--4Je3-@flora.db.elephantsql.com/tyxuktig"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
